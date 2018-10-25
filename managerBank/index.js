@@ -80,7 +80,6 @@ const conversationState = new ConversationState(memoryStorage);
 
 // Create the main dialog.
 const myBot = new MyBot(conversationState);
-const myBot = new MyBot(conversationState);
 
 // Catch-all for errors.
 adapter.onTurnError = async (context, error) => {
