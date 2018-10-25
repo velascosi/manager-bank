@@ -12,8 +12,10 @@ class MyBot {
     // Creates a new state accessor property.
     // See https://aka.ms/about-bot-state-accessors to learn more about the bot state and state accessors.
     this.countProperty = conversationState.createProperty(TURN_COUNTER_PROPERTY);
-    this.conversationState = conversationState;
+    this.conversationState = conversationState.prompt1;
   }
+
+
   /**
    *
    * @param {TurnContext} on turn context object.
