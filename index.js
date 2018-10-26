@@ -94,6 +94,12 @@ adapter.onTurnError = async (context, error) => {
     await conversationState.saveChanges(context);
 };
 
+server.get('/teste', (req,response) => {
+    response.writeHead(200, {"Content-Type": "text/html"});
+    response.write("ok");
+    response.end();
+});
+
 // Listen for incoming requests.
 server.post('/api/messages', (req, res) => {
     // console.log('teste silene 2') teste para rodar 
