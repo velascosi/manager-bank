@@ -10,7 +10,6 @@ class MyBot {
   constructor(conversationState) {
   }
 
-  
   async onTurn(turnContext) {
     if (turnContext.activity.type === ActivityTypes.Message) {
 
